@@ -1,0 +1,22 @@
+<!-- views/add-store.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Store</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+</head>
+<body>
+    <h1>Add Store</h1>
+    <br/>
+    <form action="/addstore" method="post">
+        <p>Location <input type="text" name="location" /></p>
+        <p>Manager ID <input type="text" name="mgrid" /></p>
+        <input type="submit" value="Add">
+    </form>
+    <br/><br/>
+    <a href="/">Home</a>
+</body>
+</html>

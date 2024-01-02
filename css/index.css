@@ -1,0 +1,45 @@
+html,body{
+    background-color: whitesmoke;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+#product-recalls{
+    width: 100%;
+    background-color: gainsboro;
+    padding: 10px;
+    overflow: auto;
+}
+
+#product-recalls div{
+    background-color: #8f83d8;
+    width: 200px;
+    padding:10px;
+    color:white;
+    text-align: center;
+    float:left;
+    margin-right:5px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+table{
+    text-align: center;
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    font-variant-caps: all-petite-caps;
+}
+
+input{
+    font-size:15px;
+    padding:10px
+}

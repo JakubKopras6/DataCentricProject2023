@@ -1,0 +1,23 @@
+<!-- views/store-edit.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Store</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+</head>
+<body>
+    <h1>Edit Store</h1>
+    <br/>
+    <form action="/editstore" method="post">
+        <p>SID <input name="sid" value="<%= store.sid %>" type="text" /></p>
+        <p>Location <input type="text" name="location" value="<%= store.location %>" /></p>
+        <p>Manager ID <input type="text" name="mgrid" value="<%= store.mgrid %>" /></p>
+        <input type="submit" value="Update">
+    </form>
+    <br/><br/>
+    <a href="/">Home</a>
+</body>
+</html>

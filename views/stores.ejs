@@ -1,0 +1,35 @@
+<!-- views/stores.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stores</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+</head>
+<body>
+    <h1>Stores</h1>
+    <br/>
+    <table border="1px" cellspacing="0">
+        <tr>
+            <th>SID</th>
+            <th>Location</th>
+            <th>Action</th>
+        </tr>
+        <% stores.forEach(store => { %>
+            <tr>
+                <td><%= store.sid %></td>
+                <td><%= store.location %></td>
+                <td>
+                    <a href="/stores/edit/<%= store.sid %>">Update</a>
+                </td>
+            </tr>
+        <% }); %>
+    </table>
+    <br/>
+    <a href="/addstore">Add Store</a>
+    <br/><br/>
+    <a href="/">Home</a>
+</body>
+</html>
